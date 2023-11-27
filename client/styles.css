@@ -1,0 +1,92 @@
+
+
+:root {
+    --header-height: 5rem;
+    --foooter-height: 2rem;
+
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    align-items: center;
+    background-color: burlywood;
+    height: var(--header-height);
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - var(--header-height) - var(--foooter-height));
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+
+/* LIST OF CHATS */
+.chats-list-container {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
+.chats-list {
+    list-style: none;
+    background-color: lightblue;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.chats-list-item {
+    background-color: lightgrey;
+    margin-bottom: 1rem;
+    border: solid 1px black;
+}
+
+
+
+/* CURRENT CHAT */
+.current-chat-container {
+    background-color: aquamarine;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+.current-chat-list {
+    list-style: none;
+    background-color: lightblue;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.message-item {
+    background-color: lightgrey;
+    margin-bottom: 0.5rem;
+    border: solid 1px black;
+}
+.new-message-container {
+    height: 6rem;
+    margin: 0.5rem;
+    background-color: lightpink;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    height: var(--foooter-height);
+}
